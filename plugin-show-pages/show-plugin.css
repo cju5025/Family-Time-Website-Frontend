@@ -7,7 +7,6 @@ body {
 
 header {
     height: 10%;
-    padding: 2rem;
 }
 
 #menu-bar {
@@ -31,18 +30,23 @@ header {
     color: white;
 }
 
-.mouseover {
-    font-size: 20px;
-}
-
-#plugin-images-container {
+#name {
+    padding-top: 3rem;
     display: flex;
-    flex-direction: wrap;
-    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 400;
 }
 
-.plugin-images {
-    margin: 4rem;
+#description {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+#plugin-image {
+    margin-top: 3rem;
+    margin-left: 35rem;
+    display: flex;
     box-shadow: 10px 10px 5px rgb(68, 67, 67);
 }
-
