@@ -23,7 +23,7 @@ header {
     /* background-color:  rgb(103, 101, 101); */
 }
 
-#menu-bar > a {
+.nav-bar-link {
     font-family: 'Jura', sans-serif;
     text-decoration: none;
     padding-top: 1.5rem;
@@ -31,8 +31,8 @@ header {
     color: white;
 }
 
-.mouseover {
-    font-size: 20px;
+.nav-bar-link:hover {
+    transform: scale(1.2);
 }
 
 #plugin-images-container {

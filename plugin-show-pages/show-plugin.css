@@ -22,12 +22,20 @@ header {
     /* background-color:  rgb(103, 101, 101); */
 }
 
-#menu-bar > a {
+.nav-bar-link {
     font-family: 'Jura', sans-serif;
     text-decoration: none;
     padding-top: 1.5rem;
     padding-right: 2rem;
     color: white;
+}
+
+.nav-bar-link:hover {
+    transform: scale(1.2);
+}
+
+main {
+
 }
 
 #name {
@@ -46,12 +54,9 @@ header {
 }
 
 #plugin-image {
-    /* margin-top: 3rem; */
-    /* margin-left: 35rem; */
     box-shadow: 10px 10px 5px rgb(68, 67, 67);
-    display: flex;
-    align-self: center;
-    image-orientation: center;
+    display: block;
+    margin: 0 auto;
 }
 
 #audio-section {
