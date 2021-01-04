@@ -14,18 +14,24 @@ header {
     display: flex;
     justify-content: space-around;
     background-color: rgb(103, 101, 101);
+    height: 4rem;
 }
 
 #logo {
     width: 3rem;
     size: 1px;
-    background-color:  rgb(103, 101, 101);
+    /* background-color:  rgb(103, 101, 101); */
 }
 
 #menu-bar > a {
+    font-family: 'Jura', sans-serif;
     text-decoration: none;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     padding-right: 2rem;
     color: white;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
