@@ -57,3 +57,8 @@ label {
 input {
     margin-bottom: 1rem;
 }
+
+#submit {
+    align-self: center;
+    width: 5rem;
+}
