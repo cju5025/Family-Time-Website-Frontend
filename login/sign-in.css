@@ -33,3 +33,27 @@ header {
 .nav-bar-link:hover {
     transform: scale(1.2);
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem;
+    font-size: 50px;
+}
+
+#sign-in-form {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+label {
+    padding-top: 1rem;
+}
+
+input {
+    margin-bottom: 1rem;
+}
