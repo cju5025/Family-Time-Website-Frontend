@@ -59,6 +59,12 @@ main {
     margin: 0 auto;
 }
 
+#add-to-cart-button {
+    box-shadow: 2.5px 2.5px 5px rgb(68, 67, 67);
+    margin-left: 55rem;
+    margin-top: 1rem;
+}
+
 #audio-section {
     padding-top: 2rem;
     display: flex;
