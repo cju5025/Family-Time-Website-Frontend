@@ -1,5 +1,7 @@
 
 const $navBar = document.querySelector('#menu-bar')
+const $signInLink = document.querySelector('#sign-in-link')
+const $signUpLink = document.querySelector('#sign-up-link')
 
 if (localStorage.getItem("token")){
     const $signOutLink = document.createElement('a')
@@ -19,6 +21,9 @@ if (localStorage.getItem("token")){
     function signOut (event) {
         localStorage.removeItem("token")
     }
+
+    $navBar.removeChild($signInLink)
+    $navBar.removeChild($signUpLink)
 }
 
 
