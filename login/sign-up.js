@@ -1,3 +1,5 @@
+$signupMessage = document.querySelector('#sign-up-message')
+
 const $signUpForm = document.querySelector('#sign-up-form')
 
 $signUpForm.addEventListener('submit', (event) => {
@@ -27,6 +29,14 @@ $signUpForm.addEventListener('submit', (event) => {
         },
         body: JSON.stringify(newUser)
     })
+        .then(response => response.json())
+        .then(response => {
+            const {username, password_digest} = response.user // "destructuring"
+            $signupMessage.textContent = `Your username is ${username}, and your password hash is ${password_digest}`
+            // location.replace("../index.html") // vanilla js redirect
+        }).catch(error => {
+            $signupMessage.textContent = error.message
+        })
 
     event.target.reset();
 })
