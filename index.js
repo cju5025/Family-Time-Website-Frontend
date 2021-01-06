@@ -34,7 +34,7 @@ fetch ('http://localhost:3000/items')
 
 function addItem (item) {
     const $pluginImage = document.createElement('a')
-    $pluginImage.href = `../plugin-show-pages/${item.show_name}.html`
+    $pluginImage.href = `show-plugin.html?id=${item.id}`
     $pluginImage.innerHTML = `<img class="plugin-image"  alt="${item.name}" title="${item.name}" src="${item.image_source}">`
 
     $pluginImagesContainer.append($pluginImage)
