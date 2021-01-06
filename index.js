@@ -26,6 +26,18 @@ if (localStorage.getItem("token")){
     $navBar.removeChild($signUpLink)
 }
 
+const $pluginImagesContainer = document.querySelector('#plugin-images-container')
 
+fetch ('http://localhost:3000/items')
+    .then(response => response.json())
+    .then(items => items.forEach(item => addItem(item)))
+
+function addItem (item) {
+    const $pluginImage = document.createElement('a')
+    $pluginImage.href = `../plugin-show-pages/${item.show_name}.html`
+    $pluginImage.innerHTML = `<img class="plugin-image"  alt="${item.name}" title="${item.name}" src="${item.image_source}">`
+
+    $pluginImagesContainer.append($pluginImage)
+}
 
 
