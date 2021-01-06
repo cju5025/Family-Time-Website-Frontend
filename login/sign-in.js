@@ -29,7 +29,7 @@ function signIn (event) {
         })
         .then(response => {
             localStorage.setItem("token", response.token)
-            console.log(response.token)
+            location.replace("../index.html")
         }).catch(error => {
             alert(error.message)
         })
