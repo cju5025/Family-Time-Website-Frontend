@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+
+body {
+    font-family: 'Jura', sans-serif;
+}
+
+header {
+    height: 10%;
+}
+
+#menu-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(103, 101, 101);
+    height: 4rem;
+}
+
+#logo {
+    width: 3rem;
+    size: 1px;
+    /* background-color:  rgb(103, 101, 101); */
+}
+
+.nav-bar-link {
+    font-family: 'Jura', sans-serif;
+    text-decoration: none;
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+    color: white;
+}
+
+.nav-bar-link:hover {
+    transform: scale(1.2);
+}

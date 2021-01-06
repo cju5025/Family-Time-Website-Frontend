@@ -32,8 +32,7 @@ $signUpForm.addEventListener('submit', (event) => {
         .then(response => response.json())
         .then(response => {
             const {username, password_digest} = response.user // "destructuring"
-            $signupMessage.textContent = `Your username is ${username}, and your password hash is ${password_digest}`
-            // location.replace("../index.html") // vanilla js redirect
+            location.replace("../index.html") // vanilla js redirect
         }).catch(error => {
             $signupMessage.textContent = error.message
         })

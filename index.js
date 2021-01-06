@@ -10,17 +10,17 @@ if (localStorage.getItem("token")){
     $signOutLink.classList.add('nav-bar-link')
     $navBar.append($signOutLink)
 
-    const $myAccountLink = document.createElement('a')
-    $myAccountLink.innerText = 'My Account'
-    $myAccountLink.href = 'my-account.html'
-    $myAccountLink.classList.add('nav-bar-link')
-    $navBar.append($myAccountLink)
-
     $signOutLink.addEventListener('click', signOut)
 
     function signOut (event) {
         localStorage.removeItem("token")
     }
+
+    const $myAccountLink = document.createElement('a')
+    $myAccountLink.innerText = 'My Account'
+    $myAccountLink.href = 'my-account.html'
+    $myAccountLink.classList.add('nav-bar-link')
+    $navBar.append($myAccountLink)
 
     $navBar.removeChild($signInLink)
     $navBar.removeChild($signUpLink)
