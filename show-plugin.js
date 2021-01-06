@@ -22,7 +22,12 @@ fetch(`http://localhost:3000/items/${id}`)
         $image.title = item.name 
         $image.src = item.image_source
 
-        $pluginSection.append($name, $description, $image)
+        const $addToCartButton = document.createElement('button')
+        $addToCartButton.type = "button"
+        $addToCartButton.id = "add-to-cart-button"
+        $addToCartButton.textContent = "Add To Cart"
+
+        $pluginSection.append($name, $description, $image, $addToCartButton)
     }
 
 
