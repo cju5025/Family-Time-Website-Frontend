@@ -50,8 +50,6 @@ fetch(`http://localhost:3000/items/${id}`)
                 },
                 body: JSON.stringify(newCartItem)
             })
-                .then(response => response.json())
-                .then(console.log)
         }
 
         $pluginSection.append($name, $description, $image, $price, $addToCartButton)
