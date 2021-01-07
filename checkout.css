@@ -56,7 +56,18 @@ li {
 }
 
 #checkout-button {
-display: block;
-margin: 0 auto;
+    box-shadow: 2px 2px 5px rgb(117, 114, 114);
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-image: linear-gradient(rgb(26, 151, 201), rgb(68, 85, 90));
+    font-family: 'Jura', sans-serif;
+    color: white;
+    font-size: 20px;
+    border-radius: .6rem;
+    padding: .6rem;
+    width: 30rem;
+    opacity: .9;
+    border-style: none;
 }
 

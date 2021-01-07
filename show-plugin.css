@@ -49,6 +49,8 @@ main {
 #description {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    /* margin-left: 35rem;
+    margin-right: 35rem; */
     display: flex;
     justify-content: center;
 }
@@ -63,12 +65,27 @@ main {
     display: flex;
     justify-content: center;
     margin: 1rem;
+    padding-top: .6rem;
+    padding-right: 12rem;
 }
 
 #add-to-cart-button {
-    box-shadow: 2.5px 2.5px 5px rgb(68, 67, 67);
-    margin-left: 50rem;
+    box-shadow: 2px 2px 5px rgb(117, 114, 114);
+    display: block;
+    margin: 0 auto;
     margin-top: 1rem;
+    background-image: linear-gradient(rgb(26, 151, 201), rgb(68, 85, 90));
+    font-family: 'Jura', sans-serif;
+    color: white;
+    font-size: 20px;
+    border-radius: .6rem;
+    padding: .6rem;
+    width: 10rem;
+    opacity: .9;
+    border-style: none;
+}
+#add-to-cart-button:focus {
+    
 }
 
 #audio-section {
