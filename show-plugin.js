@@ -22,6 +22,10 @@ fetch(`http://localhost:3000/items/${id}`)
         $image.title = item.name 
         $image.src = item.image_source
 
+        const $price = document.createElement('p')
+        $price.id = 'price'
+        $price.textContent = `$ ${item.price}`
+
         const $addToCartButton = document.createElement('button')
         $addToCartButton.type = "button"
         $addToCartButton.id = "add-to-cart-button"
@@ -50,7 +54,7 @@ fetch(`http://localhost:3000/items/${id}`)
                 .then(console.log)
         }
 
-        $pluginSection.append($name, $description, $image, $addToCartButton)
+        $pluginSection.append($name, $description, $image, $price, $addToCartButton)
     }
 
 
