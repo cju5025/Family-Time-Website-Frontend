@@ -34,6 +34,12 @@ header {
     transform: scale(1.2);
 }
 
+#empty-cart-button {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding: 1rem;
+}
+
 #cart-items-container {
     display: flex;
     flex-direction: wrap; 
@@ -64,4 +70,8 @@ header {
     box-shadow: 10px 10px 5px rgb(68, 67, 67);
     height: 30px;
     width: auto;
+}
+
+#price {
+    margin: 1rem;
 }
