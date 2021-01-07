@@ -25,37 +25,32 @@ fetch(`http://localhost:3000/items/${id}`)
         const $addToCartButton = document.createElement('button')
         $addToCartButton.type = "button"
         $addToCartButton.id = "add-to-cart-button"
-        $addToCartButton.textContent = "Add To Cart"
+        $addToCartButton.textContent = "Add To Cart"    
+
+        $addToCartButton.addEventListener('click', addToCart)
+
+        function addToCart () {
+
+            // const user = fetch('http://localhost:3000/users')
+
+
+            const newCartItem = {
+                user_id: null,
+                item_id: item.id
+            }
+
+            fetch('http://localhost:3000/cart_items', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(newCartItem)
+            })
+                .then(response => response.json())
+                .then(console.log)
+        }
 
         $pluginSection.append($name, $description, $image, $addToCartButton)
     }
 
 
-
-
-
-
-
-
-
-
-const $addToCartButton = document.querySelector('#add-to-cart-button')
-
-// $addToCartButton.addEventListener('click', addToCart)
-
-// function addToCart () {
-
-    
-
-//     // const newCartItem = {
-//     //     user_id: 
-//     // }
-
-//     fetch('http://localhost:3000/cart_items', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify(newCartItem)
-//     })
-// }

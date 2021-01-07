@@ -33,3 +33,35 @@ header {
 .nav-bar-link:hover {
     transform: scale(1.2);
 }
+
+#cart-items-container {
+    display: flex;
+    flex-direction: wrap; 
+    flex-wrap: wrap;
+}
+
+#cart-item {
+    display: block;
+    margin: 1rem;
+}
+
+#name {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#plugin-image {
+    box-shadow: 10px 10px 5px rgb(68, 67, 67);
+    display: block;
+    margin: 0 auto;
+}
+
+.plugin-image {
+    margin: 4rem;
+    box-shadow: 10px 10px 5px rgb(68, 67, 67);
+    height: 30px;
+    width: auto;
+}
