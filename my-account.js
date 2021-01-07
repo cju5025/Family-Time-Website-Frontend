@@ -25,8 +25,9 @@ fetch('http://localhost:3000/purchased_items')
             .then(item => showItem(item))
     }
 
+    const $pluginSection = document.querySelector('#plugin-section')
+
     function showItem(item) {
-        const $pluginSection = document.querySelector('#plugin-section')
 
         const $name = document.createElement('h1')
         $name.id = "name"
@@ -38,5 +39,9 @@ fetch('http://localhost:3000/purchased_items')
         $image.title = item.name 
         $image.src = item.image_source
 
-        $pluginSection.append($name, $image)
+        const $downloadButton = document.createElement('a')
+        $downloadButton.href = 'https://drive.google.com/u/0/uc?id=1WIiKPzflfFm1n2YL57Kfp8jWMikGz1JP&export=download'
+        $downloadButton.innerHTML = `<button type="button">Download</button>`
+
+        $pluginSection.append($name, $image, $downloadButton)
     }
