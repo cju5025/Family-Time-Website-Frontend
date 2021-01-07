@@ -40,6 +40,7 @@ fetch('http://localhost:3000/purchased_items')
         $image.src = item.image_source
 
         const $downloadButton = document.createElement('a')
+        $downloadButton.id = "download-button"
         $downloadButton.href = 'https://drive.google.com/u/0/uc?id=1WIiKPzflfFm1n2YL57Kfp8jWMikGz1JP&export=download'
         $downloadButton.innerHTML = `<button type="button">Download</button>`
 

@@ -49,3 +49,10 @@ header {
     margin: 0 auto;
 }
 
+#download-button {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    text-decoration: none;
+}
+
