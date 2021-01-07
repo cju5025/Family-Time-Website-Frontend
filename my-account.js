@@ -22,5 +22,21 @@ fetch('http://localhost:3000/purchased_items')
     function getItem(purchasedItem) {
         fetch(`http://localhost:3000/items/${purchasedItem.item_id}`)
             .then(response => response.json())
-            .then(console.log)
+            .then(item => showItem(item))
+    }
+
+    function showItem(item) {
+        const $pluginSection = document.querySelector('#plugin-section')
+
+        const $name = document.createElement('h1')
+        $name.id = "name"
+        $name.textContent = item.name
+
+        const $image = document.createElement('img')
+        $image.id = "plugin-image"
+        $image.alt = item.name
+        $image.title = item.name 
+        $image.src = item.image_source
+
+        $pluginSection.append($name, $image)
     }

@@ -33,3 +33,19 @@ header {
 .nav-bar-link:hover {
     transform: scale(1.2);
 }
+
+#name {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#plugin-image {
+    box-shadow: 10px 10px 5px rgb(68, 67, 67);
+    display: block;
+    margin: 0 auto;
+}
+
