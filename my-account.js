@@ -13,3 +13,14 @@ if (localStorage.getItem("token")){
         localStorage.removeItem("token")
     }
 }
+
+fetch('http://localhost:3000/purchased_items')
+    .then(response => response.json())
+    .then(purchased_items => purchased_items.forEach(purchasedItem => getItem(purchasedItem)))
+
+
+    function getItem(purchasedItem) {
+        fetch(`http://localhost:3000/items/${purchasedItem.item_id}`)
+            .then(response => response.json())
+            .then(console.log)
+    }
