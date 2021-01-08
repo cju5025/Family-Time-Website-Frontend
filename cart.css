@@ -19,7 +19,6 @@ header {
 #logo {
     width: 3rem;
     size: 1px;
-    /* background-color:  rgb(103, 101, 101); */
 }
 
 .nav-bar-link {
@@ -63,7 +62,7 @@ header {
     margin: 4rem;
     box-shadow: 10px 10px 5px rgb(68, 67, 67);
 }
-img {
+.plugin-image {
     height: 150px;
     width: 300px;
 }
