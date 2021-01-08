@@ -59,6 +59,8 @@ main {
     box-shadow: 10px 10px 5px rgb(68, 67, 67);
     display: block;
     margin: 0 auto;
+    height: 150;
+    width: 300px;
 }
 
 #price {

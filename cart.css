@@ -62,8 +62,10 @@ header {
 .plugin-image {
     margin: 4rem;
     box-shadow: 10px 10px 5px rgb(68, 67, 67);
-    height: 30px;
-    width: auto;
+}
+img {
+    height: 150px;
+    width: 300px;
 }
 
 #price {

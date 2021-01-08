@@ -19,7 +19,6 @@ header {
 #logo {
     width: 3rem;
     size: 1px;
-    /* background-color:  rgb(103, 101, 101); */
 }
 
 .nav-bar-link {
@@ -47,6 +46,12 @@ header {
     box-shadow: 10px 10px 5px rgb(68, 67, 67);
     display: block;
     margin: 0 auto;
+    height: 150px;
+    width: 300px;
+}
+
+#download-link {
+    text-decoration: none;
 }
 
 #download-button {
@@ -54,5 +59,18 @@ header {
     justify-content: center;
     margin: 1rem;
     text-decoration: none;
+    box-shadow: 2px 2px 5px rgb(117, 114, 114);
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-image: linear-gradient(rgb(26, 151, 201), rgb(68, 85, 90));
+    font-family: 'Jura', sans-serif;
+    color: white;
+    font-size: 20px;
+    border-radius: .6rem;
+    padding: .6rem;
+    width: 10rem;
+    opacity: .9;
+    border-style: none;
 }
 
