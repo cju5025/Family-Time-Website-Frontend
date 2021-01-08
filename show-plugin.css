@@ -92,6 +92,31 @@ main {
 #audio-section {
     padding-top: 2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: wrap;
     align-items: center;
 }
+
+#drum-demo-container {
+    margin-left: 30rem;
+}
+
+#drum-demo-container div {
+    margin-top: 1rem;
+}
+
+#drum-demo-container div p {
+    margin-bottom: .7rem;
+}
+
+#sine-demo-container {
+    margin-left: 2rem;
+}
+
+#sine-demo-container div {
+    margin-top: 1rem;
+}
+
+#sine-demo-container div p {
+    margin-bottom: .7rem;
+}
+
